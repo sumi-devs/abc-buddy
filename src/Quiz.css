@@ -1,48 +1,44 @@
-* {
-    font-family: fantasy;
-}
-
 .quiz-container {
-  padding: 1rem;
-  text-align: center;
+    padding: 1rem;
+    text-align: center;
 }
 
 .quiz-title {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
 }
 
 .quiz-image {
-  width: 200px;
-  margin: 0 auto 2rem;
+    width: 200px;
+    margin: 0 auto 2rem;
 }
 
 .quiz-options {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 .option-button {
-  background-color: #fde68a;
-  padding: 1rem 2rem;
-  font-size: 2rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    background-color: #fde68a;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .option-button:hover {
-  background-color: #facc15;
+    background-color: #facc15;
 }
 
 .quiz-feedback {
-  font-size: 2.4rem;
-  font-weight: bold;
+    font-size: 2.4rem;
+    font-weight: bold;
 }
 
 .back-button {
