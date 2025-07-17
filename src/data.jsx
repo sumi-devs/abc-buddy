@@ -1,0 +1,30 @@
+const letters = [
+  { letter: 'A', word: 'Apple', image: 'apple.png', sound: 'A.mp3' },
+  { letter: 'B', word: 'Ball', image: 'ball.png', sound: 'B.mp3' },
+  { letter: 'C', word: 'Cat', image: 'cat.png', sound: 'C.mp3' },
+  { letter: 'D', word: 'Dog', image: 'dog.png', sound: 'D.mp3' },
+  { letter: 'E', word: 'Elephant', image: 'elephant.png', sound: 'E.mp3' },
+  { letter: 'F', word: 'Fish', image: 'fish.png', sound: 'F.mp3' },
+  { letter: 'G', word: 'Grapes', image: 'grapes.png', sound: 'G.mp3' },
+  { letter: 'H', word: 'Hat', image: 'hat.png', sound: 'H.mp3' },
+  { letter: 'I', word: 'Icecream', image: 'icecream.png', sound: 'I.mp3' },
+  { letter: 'J', word: 'Juice', image: 'juice.png', sound: 'J.mp3' },
+  { letter: 'K', word: 'Key', image: 'key.png', sound: 'K.mp3' },
+  { letter: 'L', word: 'Lemon', image: 'lemon.png', sound: 'L.mp3' },
+  { letter: 'M', word: 'Monkey', image: 'monkey.png', sound: 'M.mp3' },
+  { letter: 'N', word: 'Nose', image: 'nose.png', sound: 'N.mp3' },
+  { letter: 'O', word: 'Orange', image: 'orange.png', sound: 'O.mp3' },
+  { letter: 'P', word: 'Pig', image: 'pig.png', sound: 'P.mp3' },
+  { letter: 'Q', word: 'Queen', image: 'queen.png', sound: 'Q.mp3' },
+  { letter: 'R', word: 'Rabbit', image: 'rabbit.png', sound: 'R.mp3' },
+  { letter: 'S', word: 'Sun', image: 'sun.png', sound: 'S.mp3' },
+  { letter: 'T', word: 'Tiger', image: 'tiger.png', sound: 'T.mp3' },
+  { letter: 'U', word: 'Umbrella', image: 'umbrella.png', sound: 'U.mp3' },
+  { letter: 'V', word: 'Violin', image: 'violin.png', sound: 'V.mp3' },
+  { letter: 'W', word: 'Whale', image: 'whale.png', sound: 'W.mp3' },
+  { letter: 'X', word: 'X-Ray', image: 'xray.png', sound: 'X.mp3' },
+  { letter: 'Y', word: 'Yellow', image: 'yellow.png', sound: 'Y.mp3' },
+  { letter: 'Z', word: 'Zebra', image: 'zebra.png', sound: 'Z.mp3' }
+];
+
+export default letters;

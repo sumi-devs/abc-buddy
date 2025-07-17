@@ -1,0 +1,67 @@
+body {
+    background-color: beige;
+}
+
+.home-container {
+    padding: 1rem;
+    text-align: center;
+}
+
+.letter-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.letter-button {
+    position: relative;
+    border: 1px solid #ccc;
+    height: 300px;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0;
+}
+
+.letter-button:hover {
+    background-color: #fd93e490;
+}
+
+.letter-label {
+    font-family: fantasy, serif;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-size: 300px;
+    color: rgb(29, 29, 29);
+    line-height: 1;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.letter-image {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    width: 200px;
+    z-index: 2;
+}
+
+.quiz-button {
+    background-color: #fd93e490;
+    color: rgb(29, 29, 29);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 5rem;
+    font-family: fantasy, serif;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.quiz-button:hover {
+    background-color: #fd93e4dd;
+}
