@@ -53,7 +53,11 @@ export default function Quiz() {
             </div>
             <div className="quiz-feedback">{feedback}</div>
             <button onClick={() => navigate('/.')} className="back-button">
-                Go Back
+                Back to the Letters
+            </button>
+            
+            <button onClick={() => navigate('/feedback')} className="feedback-button">
+                Give Feedback
             </button>
         </div>
     );

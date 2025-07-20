@@ -1,71 +1,69 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-    background-color: beige;
-}
-
 .home-container {
-    padding: 1rem;
-    text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  text-align: center;
 }
 
-.letter-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-bottom: 1.5rem;
+.hero-title {
+  font-size: 40px;
+  color: #3f51b5;
+  margin-bottom: 10px;
 }
 
-.letter-button {
-    position: relative;
-    border: 1px solid #ccc;
-    height: 300px;
-    border-radius: 0.5rem;
-    background-color: transparent;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-    overflow: hidden;
-    padding: 0;
+.tagline {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
 }
 
-.letter-button:hover {
-    background-color: #fd93e490;
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
 }
 
-.letter-label {
-    font-family: fantasy, serif;
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    font-size: 300px;
-    color: rgb(29, 29, 29);
-    line-height: 1;
-    z-index: 1;
-    pointer-events: none;
+
+.info-card {
+  background: #f1d754;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
 }
 
-.letter-image {
-    position: absolute;
-    bottom: 0.5rem;
-    right: 0.5rem;
-    width: 200px;
-    z-index: 2;
+.info-card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555;
 }
 
-.quiz-button {
-    background-color: #fd93e490;
-    color: rgb(29, 29, 29);
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 1rem;
-    font-size: 5rem;
-    font-family: fantasy, serif;
-    cursor: pointer;
-    margin-top: 30px;
+.info-card p, .info-card li {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
 }
 
-.quiz-button:hover {
-    background-color: #fd93e4dd;
+.info-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.alphabets-button {
+  margin-top: 30px;
+  padding: 14px 32px;
+  font-size: 16px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.alphabets-button:hover {
+  background-color: #2e3ea5;
 }

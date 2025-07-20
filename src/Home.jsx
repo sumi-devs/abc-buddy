@@ -1,29 +1,43 @@
 import { useNavigate } from 'react-router-dom';
-import letters from './data';
 import './Home.css';
 
 export default function Home() {
     const navigate = useNavigate();
 
-    const playSound = (file) => {
-        const audio = new Audio(`/assets/sounds/${file}`);
-        audio.playbackRate = 0.75;
-        audio.play();
-    };
-
     return (
         <div className="home-container">
-            <div className="letter-grid">
-                {letters.map((l) => (
-                    <button key={l.letter} className="letter-button" onClick={() => playSound(l.sound)}>
-                        <div className="letter-label">{l.letter}</div>
-                        <img src={`/assets/images/${l.image}`} alt={l.word} className="letter-image" />
-                    </button>
-                ))}
+            <h1 className="hero-title">ABC Buddy</h1>
+            <p className="tagline">An interactive alphabet learning site for children with autism</p>
+
+            <div className="info-grid">
+                <div className="info-card">
+                    <h2>🛠️ Built With</h2>
+                    <p>HTML, CSS, ReactJS</p>
+                </div>
+                <div className="info-card">
+                    <h2>🎯 Goal</h2>
+                    <p>Make learning alphabets fun and engaging for kids with autism.</p>
+                </div>
+                <div className="info-card">
+                    <h2>💡 Features</h2>
+                    <ul>
+                        <li>Visual + audio interaction</li>
+                        <li>Click-to-hear letter sounds</li>
+                        <li>Simple quiz to reinforce learning</li>
+                    </ul>
+                </div>
+                <div className="info-card">
+                    <h2>📌 Why It Helps</h2>
+                    <ul>
+                        <li>Visuals improve attention</li>
+                        <li>Sounds support memory</li>
+                        <li>Fun elements boost engagement</li>
+                    </ul>
+                </div>
             </div>
 
-            <button onClick={() => navigate('/quiz')} className="quiz-button">
-                Quiz Yourself !
+            <button onClick={() => navigate('/alphabets')} className="alphabets-button">
+                Start Learning →
             </button>
         </div>
     );
