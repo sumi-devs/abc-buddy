@@ -1,66 +1,314 @@
-#feedbackForm {
-  max-width: 400px;
-  margin: 50px auto;
-  background-color: #f8f9fa;
-  padding: 25px 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  font-family: 'Segoe UI', sans-serif;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-#feedbackForm h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
+.feedback-container {
+  min-height: 100vh;
+  background: beige;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.info-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.info-content {
+  max-width: 28rem;
+}
+
+.info-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.info-description {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.info-points {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.point-text {
+  color: #374151;
+  margin: 0;
+}
+
+.quote-box {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: rgb(243, 201, 231);
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #dbeafe;
+}
+
+.quote-text {
+  font-size: 0.875rem;
+  color: #4d5155;
+  font-style: italic;
+  margin: 0;
+}
+
+.form-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feedback-card {
+  background-color: beige;
+  border-radius: 0.75rem;
+  border: #1f2937 solid 1px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  max-width: 28rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Updated form styling for TutorialsPoint pattern */
+#feedbackForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#feedbackForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 #feedbackForm label {
   display: block;
-  margin-top: 12px;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #333;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
 }
 
 #feedbackForm input[type="text"],
-#feedbackForm input[type="number"],
 #feedbackForm select,
 #feedbackForm textarea {
   width: 100%;
-  padding: 8px 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s ease;
   box-sizing: border-box;
-  transition: border-color 0.2s;
-}
-
-#feedbackForm textarea {
-  resize: vertical;
-  min-height: 80px;
+  font-family: inherit;
 }
 
 #feedbackForm input[type="text"]:focus,
-#feedbackForm input[type="number"]:focus,
 #feedbackForm select:focus,
 #feedbackForm textarea:focus {
-  border-color: #007bff;
-  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+#feedbackForm textarea {
+  resize: none;
+  min-height: 80px;
 }
 
 #feedbackForm input[type="submit"] {
-  margin-top: 20px;
   width: 100%;
-  background-color: #007bff;
+  background-color: #3b82f6;
   color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
   border: none;
-  padding: 10px;
-  font-size: 15px;
-  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.2s ease;
+  font-size: 1rem;
+  margin-top: 0.5rem;
 }
 
 #feedbackForm input[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: #2563eb;
+}
+
+/* Legacy class support for any remaining custom elements */
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.form-input,
+.form-select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.form-input:focus,
+.form-select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.rating-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.75rem;
+}
+
+.rating-buttons {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.rating-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 2px solid #d1d5db;
+  background-color: transparent;
+  color: #6b7280;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+}
+
+.rating-button:hover {
+  border-color: #93c5fd;
+}
+
+.rating-button.active {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  color: white;
+}
+
+.form-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s ease;
+  resize: none;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.form-textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 1rem;
+}
+
+.submit-button:hover {
+  background-color: #2563eb;
+}
+
+.back-container {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-button {
+  background: transparent;
+  color: rgb(0, 0, 0);
+  padding: 0.75rem 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: #1f2937 solid 1px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 1rem;
+}
+
+.back-button:hover {
+  background-color: rgb(243, 201, 231);
+}
+
+/* Responsive styles: mediaquery */
+
+@media (max-width: 768px) {
+  .feedback-container {
+    flex-direction: column;
+  }
+  
+  .info-section,
+  .form-section {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  
+  .info-title {
+    font-size: 2rem;
+  }
+  
+  .info-description {
+    font-size: 1rem;
+  }
 }

@@ -1,4 +1,4 @@
-# 🧠 ABC Buddy
+# 🆎 ABC Buddy
 
 ABC Buddy is a fun and interactive letter learning app for kids! It features colorful images, letter sounds, and a quiz to test what they’ve learned.
 # 🚀 Features

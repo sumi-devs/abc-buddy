@@ -24,18 +24,32 @@ body {
     height: 300px;
     border-radius: 0.5rem;
     background-color: transparent;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
     cursor: pointer;
     overflow: hidden;
     padding: 0;
 }
 
 .letter-button:hover {
-    background-color: #fd93e490;
+    background-color: #efdd9390;
+    transform: scale(1.05)
+}
+
+.letter-button:hover .letter-image {
+    transform: scale(1.05);
+}
+
+.letter-button:hover .letter-label {
+    z-index: 3;
+    transform: scale(1.1) rotate(3deg);
+}
+
+.letter-button:hover .letter-image {
+    transform: scale(1.1) rotate(-3deg);
 }
 
 .letter-label {
-    font-family: fantasy, serif;
+    font-family: fantasy;
     position: absolute;
     bottom: 1rem;
     left: 1rem;
@@ -44,6 +58,7 @@ body {
     line-height: 1;
     z-index: 1;
     pointer-events: none;
+    transition: all 0.3s ease;
 }
 
 .letter-image {
@@ -52,20 +67,25 @@ body {
     right: 0.5rem;
     width: 200px;
     z-index: 2;
+    transition: all 0.3s ease;
 }
 
-.quiz-button {
+.quiz-button, .home-button {
     background-color: #fd93e490;
     color: rgb(29, 29, 29);
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 1rem;
     font-size: 5rem;
-    font-family: fantasy, serif;
+    font-family: fantasy;
     cursor: pointer;
     margin-top: 30px;
 }
 
-.quiz-button:hover {
+.quiz-button {
+    margin-left: 1rem;
+}
+
+.quiz-button:hover, .home-button:hover {
     background-color: #fd93e4dd;
 }
