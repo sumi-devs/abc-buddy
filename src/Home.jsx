@@ -8,7 +8,7 @@ function Home() {
     return (
         <div className="home-container">
             <h1 className="hero-title">ABC Buddy</h1>
-            <p className="tagline">An interactive alphabet learning site for children with autism</p>
+            <p className="tagline">ABC Buddy is a website to help children with autism learn the alphabet. The website helps the children learn by associating the letters with images/words, as well as by playing a sound when the letter is pressed. Once the child is finished learning, they can quiz themselves to test their knowledge.</p>
 
             <div className="info-grid">
 
@@ -39,8 +39,12 @@ function Home() {
             {/*  Routing using Link */}
 
             <Link to="/alphabets"><button className="alphabets-button">
-                Start Learning →
+                Let's Learn Alphabets →
             </button></Link> 
+
+            <Link to="/habits"><button className="habits-button">
+                Let's Learn Social Etiquette →
+            </button></Link>
 
             <Link to="/info"><button className="info-button">
                 More Information →

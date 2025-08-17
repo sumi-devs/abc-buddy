@@ -1,0 +1,51 @@
+.habits-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.habits-title {
+  font-size: 2.5rem;
+  color: #4CAF50;
+  margin-bottom: 2rem;
+}
+
+.habits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.habit-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: #4CAF50 solid 1px;
+}
+
+.habit-title {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+.habit-desc {
+  font-size: 1rem;
+  color: #666;
+}
+
+.nav-button {
+  background: #4CAF50;
+  color: white;
+  padding: 1.5rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.nav-button:hover {
+  background: #45a049;
+}

@@ -3,7 +3,8 @@ import letters from './data';
 import './Quiz.css';
 import { Link } from 'react-router-dom';
 
-// Function to get a random quiz question
+// function to get a random quiz question
+
 function getRandomQuiz() {
     const correct = letters[Math.floor(Math.random() * letters.length)];
     const options = [correct];

@@ -5,6 +5,7 @@ import Alphabets from './Alphabets';
 import Quiz from './Quiz';
 import FeedbackForm from './FeedbackForm';
 import letters from './data';
+import Habits from './Habits';
 
 // playSound function to pass to Alphabets
 function playSound(file) {
@@ -20,6 +21,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/info" element={<Info />} />
+        <Route path="/habits" element={<Habits />} />
         <Route path="/alphabets" element={<Alphabets letters={letters} onLetterClick={playSound} />} /> {/* passing letters and playSound as props */}
         <Route path="/quiz" element={<Quiz />} />
         <Route path="/feedback" element={<FeedbackForm />} />

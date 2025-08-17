@@ -1,6 +1,7 @@
 .home-container {
   max-width: 960px;
-  margin: 0 auto;
+  margin-bottom: 0;
+  margin-top: 0;
   padding: 50px 20px;
   font-family: 'Segoe UI', sans-serif;
   color: #333;
@@ -13,17 +14,10 @@
   margin-bottom: 10px;
 }
 
-.tagline {
-  font-size: 18px;
-  color: #666;
-  margin-bottom: 40px;
-}
-
 .info-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
-  margin-bottom: 40px;
 }
 
 .info-card {
@@ -53,8 +47,7 @@
   padding-left: 20px;
 }
 
-.alphabets-button, .h-button {
-  margin: 30px;
+.h-button {
   padding: 14px 32px;
   font-size: 16px;
   background-color: #3f51b5;
@@ -65,8 +58,6 @@
   transition: background-color 0.3s;
 }
 
-/* hover effects */
-
-.alphabets-button:hover, .h-button:hover {
+.h-button:hover {
   background-color: #2e3ea5;
 }

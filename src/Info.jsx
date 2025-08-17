@@ -7,8 +7,7 @@ function Info() {
 
     return (
         <div className="home-container">
-            <h1 className="hero-title">ABC Buddy</h1>
-            <p className="tagline">ABC Buddy is a website to help children with autism learn the alphabet. The website helps the children learn by associating the letters with images/words, as well as by playing a sound when the letter is pressed. Once the child is finished learning, they can quiz themselves to test their knowledge.</p>
+            <h1 className="hero-title">ABC Buddy</h1><br/>
 
             <div className="info-grid">
                 <div className="info-card">
@@ -45,12 +44,8 @@ function Info() {
 
             {/*  Routing using Link */}
 
-            <Link to="/alphabets"><button className="alphabets-button">
-                Start Learning →
-            </button></Link>
-
             <Link to="/"><button className="h-button">
-                Back to Home →
+               ← Back to Home
             </button></Link>
 
         </div>
