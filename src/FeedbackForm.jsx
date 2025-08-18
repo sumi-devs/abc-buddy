@@ -96,34 +96,17 @@ class FeedbackForm extends React.Component {
             <div id="feedbackForm">
               <form onSubmit={(e) => this.onSubmit(e)}>
                 <label htmlFor="name">Your Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Enter your name"
-                  value={this.state.feedback.name}
-                  onChange={this.handleNameChange}
-                />
+                <input type="text" id="name" name="name" placeholder="Enter your name" value={this.state.feedback.name} onChange={this.handleNameChange}/>
 
                 <label htmlFor="role">You are a</label>
-                <select
-                  id="role"
-                  name="role"
-                  value={this.state.feedback.role}
-                  onChange={this.handleRoleChange}
-                >
+                <select id="role" name="role" value={this.state.feedback.role} onChange={this.handleRoleChange}>
                   <option value="">Select your role</option>
                   <option value="Parent">Parent</option>
                   <option value="Teacher">Teacher</option>
                 </select>
 
                 <label htmlFor="rating">Rating</label>
-                <select
-                  id="rating"
-                  name="rating"
-                  value={this.state.feedback.rating}
-                  onChange={this.handleRatingChange}
-                >
+                <select id="rating" name="rating" value={this.state.feedback.rating} onChange={this.handleRatingChange}>
                   <option value="">Select rating</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -133,28 +116,17 @@ class FeedbackForm extends React.Component {
                 </select>
 
                 <label htmlFor="comment">Comments</label>
-                <textarea
-                  id="comment"
-                  name="comment"
-                  placeholder="Share your thoughts with us..."
-                  value={this.state.feedback.comment}
-                  onChange={this.handleCommentChange}
-                  rows={3}
-                />
+                <textarea id="comment" name="comment" placeholder="Share your thoughts with us..." value={this.state.feedback.comment} onChange={this.handleCommentChange} rows={3}/>
 
                 <input type="submit" value="Submit Feedback" />
               </form>
             </div>)}
 
             <div className="back-container"> {/* navigation with Link */}
-              <Link to="/"><button
-                className="back-button"
-              >
+              <Link to="/"><button className="back-button">
                 ← Back to Home
               </button></Link>
-              <Link to="/quiz"><button
-                className="back-button"
-              >
+              <Link to="/quiz"><button className="back-button">
                 ← Back to Quiz
               </button></Link>
             </div>
